@@ -1,0 +1,6 @@
+language: node_js
+node_js:
+  - '11'
+script:
+  - npm run coveralls
+repo_token: VC5uBLHBboAoIjAgy7VILsk5iWNL7gYNU
