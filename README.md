@@ -3,3 +3,5 @@ Unit test with Jest
 
 # How to execute test ?
 npm test
+
+[![Coverage Status](https://coveralls.io/repos/github/timAlltricks/mds3_unittesting_2020/badge.svg?branch=master)](https://coveralls.io/github/timAlltricks/mds3_unittesting_2020?branch=master)
