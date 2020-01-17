@@ -1,4 +1,4 @@
-const reverseString = str =>
+var reverseString = str =>
   str
     .toLowerCase()
     .split('')

@@ -1,4 +1,4 @@
-const isAnagram = require('../src/anagram');
+var isAnagram = require('../src/anagram');
 
 /*
 
@@ -32,22 +32,22 @@ test('"Hello" is NOT an anagram of "Aloha"', () => {
 
 */
 
-const functions = require('../src/variousfunctions');
+var functions = require('../src/variousfunctions');
 
-const nameCheck = () => console.log('Checking Name.');
+var nameCheck = () => console.log('Checking Name.');
 
 describe('Checking Names', () => {
   beforeEach(() => nameCheck());
 
   test('User is Jeff', () => {
-    const user = 'Jeff';
+    var user = 'Jeff';
     //Check if the user is Jeff
     // Complete here
     expect(functions.checkValue(user)).toBe('Jeff');
   });
 
   test('User is Karen', () => {
-    const user = 'Karen';
+    var user = 'Karen';
     //Check if the user is Karen
     // Complete here
     expect(functions.checkValue(user)).toBe('Karen');
@@ -93,15 +93,15 @@ test('Should be falsy', () => {
 // toEqual
 test('User should be Marc Antoine object', () => {
   // Complete here
-  const user = functions.createUser();
+  var user = functions.createUser();
   expect(functions.checkValue(user.firstName)).toBe('Marc');
   expect(functions.checkValue(user.lastName)).toBe('Antoine');
 });
 
 // Less than and greater than
 test('Should be under or equal 1000', () => {
-  const load1 = 500;
-  const load2 = 500;
+  var load1 = 500;
+  var load2 = 500;
   // Complete here
   expect(functions.add(load1, load2)).toBeLessThanOrEqual(1000);
 });
@@ -124,7 +124,7 @@ test('Admin should be in usernames', () => {
 // Async Await since ES7
 test('User fetched name should be Leanne Graham', async () => {
   // Complete here
-  const data = await functions.fetchUser();
+  var data = await functions.fetchUser();
   expect(functions.checkValue(data.name)).toBe('Leanne Graham');
 });
 
@@ -134,7 +134,7 @@ test('User fetched name should be Leanne Graham', async () => {
 
 */
 
-const reverseString = require('../src/reversestr');
+var reverseString = require('../src/reversestr');
 
 test('reverseString function exists', () => {
   // Complete here

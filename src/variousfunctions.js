@@ -8,14 +8,14 @@ https://www.npmjs.com/package/axios
 Desc: Promise based HTTP client for the browser and node.js
 
 */
-const axios = require('axios');
+var axios = require('axios');
 
-const functions = {
+var functions = {
   add: (num1, num2) => num1 + num2,
   isNull: () => null,
   checkValue: x => x,
   createUser: () => {
-    const user = { firstName: 'Marc' };
+    var user = { firstName: 'Marc' };
     user['lastName'] = 'Antoine';
     return user;
   },
